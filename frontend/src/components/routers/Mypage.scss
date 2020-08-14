@@ -1,0 +1,441 @@
+.Mypage {
+  min-height: 75vh;
+  font-family: "S-CoreDream-8Heavy";
+  font-size: 1.2rem;
+  text-align: center;
+  padding-bottom: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px 0 10px;
+  // border: 1px solid red;
+
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
+
+  .profileBox {
+    display: flex;
+    margin: 8px 0 5px 0;
+    width: 100%;
+    // height: 30%;
+
+    @media screen and (min-width: 768px) {
+      margin: 12px 0 5px 0;
+    }
+
+    .imgBox {
+      // border: 1px solid red;
+      width: 35%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        object-fit: cover;
+        // border: 1px solid red;
+
+        @media screen and (min-width: 768px) {
+          width: 140px;
+          height: 140px;
+          border-radius: 100px;
+          // border: 1px solid red;
+        }
+      }
+    }
+
+    .textBox {
+      // border: 1px solid red;
+      width: 65%;
+      padding: 0 0 0 10px;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .nickname {
+        color: #85c9ce;
+        font-size: 1.3rem;
+        // border: 1px solid red;
+        margin-bottom: 5px;
+
+        @media screen and (min-width: 768px) {
+          font-size: 2.2rem;
+        }
+      }
+
+      .type {
+        color: #fab7c3;
+        font-size: 1.2rem;
+        margin-bottom: 7px;
+        // margin: 10px 20px 10px 20px;
+        // border: 1px solid red;
+
+        @media screen and (min-width: 768px) {
+          font-size: 1.6rem;
+        }
+      }
+
+      .cntBox {
+        display: flex;
+        // flex-direction: column;
+
+        // border: 1px solid red;
+        width: 100%;
+        margin-bottom: 5px;
+        color: #5d5d5d;
+
+        .fcnt {
+          width: 57%;
+          text-align: left;
+          // border: 1px solid red;
+          font-size: 1rem;
+          color: #353535;
+          transition: 0.2s;
+
+          @media screen and (min-width: 768px) {
+            width: 45%;
+            font-size: 1.3rem;
+          }
+
+          &:hover {
+            text-decoration: none;
+            color: #85c9ce;
+          }
+        }
+
+        .rcnt {
+          width: 43%;
+          text-align: left;
+          // border: 1px solid red;
+          font-size: 1rem;
+          color: #353535;
+          transition: 0.2s;
+
+          @media screen and (min-width: 768px) {
+            width: 55%;
+            font-size: 1.3rem;
+          }
+
+          &:hover {
+            text-decoration: none;
+            color: #fab7c3;
+          }
+        }
+      }
+    }
+  }
+
+  .btn {
+    padding: 2px;
+    font-size: 0.8rem;
+    border: 1.7px solid #747474;
+    color: #747474;
+    width: 5.5rem;
+    background-color: #f6f6f6;
+    transition: 0.5s;
+    margin-top: 5px;
+
+    &:hover {
+      text-decoration: none;
+      background-color: #eaeaea;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 1.2rem;
+      width: 8rem;
+      margin-top: 10px;
+    }
+  }
+
+  .favoriteBox {
+    width: 100%;
+    margin: 10px 0 7px 0;
+    border: 2px solid #98d7db;
+    border-radius: 4px;
+
+    @media screen and (min-width: 768px) {
+      margin: 20px 0 5px 0;
+    }
+  }
+
+  .reviewBox {
+    width: 100%;
+    margin: 7px 0 10px 0;
+    border: 2px solid #f9bbc7;
+    border-radius: 4px;
+
+    @media screen and (min-width: 768px) {
+      margin: 20px 0 10px 0;
+    }
+  }
+
+  .favoriteTitle {
+    background: #98d7db;
+    padding: 4px 0 4px 0;
+    // border: 1px solid red;
+    font-size: 1.2rem;
+
+    @media screen and (min-width: 768px) {
+      font-size: 1.4rem;
+    }
+  }
+
+  .reviewTitle {
+    background: #f9bbc7;
+    padding: 4px 0 4px 0;
+    // border: 1px solid red;
+    font-size: 1.2rem;
+
+    @media screen and (min-width: 768px) {
+      font-size: 1.4rem;
+    }
+  }
+
+  .contentBox {
+    // padding: 4px 0 4px 0;
+
+    // favorite css
+    .fcontent {
+      display: flex;
+      // justify-content: left;
+      align-items: center;
+      border-top: 1px solid #98d7db;
+      border-bottom: 1px solid #98d7db;
+      width: 100%;
+      text-align: center;
+      padding: 4px 0 4px 0;
+      color: #353535;
+      font-size: 1rem;
+
+      @media screen and (min-width: 768px) {
+        padding: 7px 0 7px 0;
+        font-size: 1.2rem;
+      }
+
+      .fname {
+        margin: 0 5px 0 8px;
+        // border: 1px solid red;
+        width: 50%;
+        color: #353535;
+        text-align: center;
+
+        // 길어지면 ...으로 생략하기
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        &:hover {
+          color: #5d5d5d;
+        }
+      }
+
+      .fcategory {
+        // border: 1px solid red;
+        width: 25%;
+
+        // 길어지면 ...으로 생략하기
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .farea {
+        margin: 0 8px 0 5px;
+        // border: 1px solid red;
+        width: 25%;
+
+        // 길어지면 ...으로 생략하기
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+
+    // review css
+    .content {
+      display: flex;
+      // justify-content: left;
+      align-items: center;
+      border-top: 1px solid #f9bbc7;
+      border-bottom: 1px solid #f9bbc7;
+      width: 100%;
+      text-align: center;
+      padding: 4px 0 4px 0;
+      color: #353535;
+      font-size: 1rem;
+
+      @media screen and (min-width: 768px) {
+        padding: 7px 0 7px 0;
+        font-size: 1.2rem;
+      }
+
+      // review css
+      .name {
+        width: 28%;
+        margin: 0 8px 0 5px;
+        color: #353535;
+
+        // 길어지면 ...으로 생략하기
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        &:hover {
+          color: #5d5d5d;
+        }
+      }
+
+      .detail {
+        // border: 1px solid red;
+        width: 60%;
+        color: #353535;
+        text-align: left;
+
+        // 길어지면 ...으로 생략하기
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        &:hover {
+          color: #5d5d5d;
+        }
+      }
+
+      .score {
+        // border: 1px solid red;
+        width: 12%;
+        margin: 0 5px 0 2px;
+      }
+    }
+  }
+
+  .moreBox {
+    .fmore {
+      padding: 3px;
+      border-top: 1px solid #98d7db;
+      // background: #d8fcff;
+      // margin: 10px;
+      border-radius: 0 0 2px 2px;
+      font-size: 1rem;
+      color: grey;
+      transition: 0.3s;
+
+      &:hover {
+        text-decoration: none;
+        color: #5d5d5d;
+        background: #98d7db;
+      }
+
+      @media screen and (min-width: 768px) {
+        padding: 4px 0 4px 0;
+        font-size: 1.15rem;
+      }
+    }
+    &:hover {
+      text-decoration: none;
+      // color: darkgrey;
+    }
+
+    .more {
+      padding: 3px;
+      border-top: 1px solid #f9bbc7;
+      // background: #d8fcff;
+      // margin: 10px;
+      border-radius: 0 0 2px 2px;
+      font-size: 1rem;
+      color: grey;
+      transition: 0.3s;
+
+      &:hover {
+        text-decoration: none;
+        color: #5d5d5d;
+        background: #f9bbc7;
+      }
+
+      @media screen and (min-width: 768px) {
+        padding: 4px 0 4px 0;
+        font-size: 1.15rem;
+      }
+    }
+    &:hover {
+      text-decoration: none;
+      // color: darkgrey;
+    }
+  }
+
+  .empty {
+    color: grey;
+    font-size: 1.2rem;
+    margin: 20px 0 20px 0;
+
+    @media screen and (min-width: 768px) {
+      font-size: 1.5rem;
+      margin: 40px 0 40px 0;
+    }
+  }
+}
+
+.loginBox {
+  min-height: 75vh;
+  font-family: "S-CoreDream-8Heavy";
+  font-size: 1.2rem;
+  text-align: center;
+  padding-bottom: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px 0 10px;
+
+  .joinBtn {
+    font-size: 1.2rem;
+    margin: 10px;
+    padding: 10px;
+    width: 8rem;
+    background: #f9bbc7;
+    border: 2px solid #f9bbc7;
+    transition: 0.5s;
+    border-radius: 7px;
+    color: #353535;
+
+    &:hover {
+      text-decoration: none;
+      background-color: #fff;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 1.4rem;
+      width: 9rem;
+    }
+  }
+
+  .loginBtn {
+    font-size: 1.2rem;
+    border: 2px solid #98d7db;
+    border-radius: 7px;
+    margin: 10px;
+    padding: 10px;
+    width: 8rem;
+    background: #98d7db;
+    transition: 0.5s;
+    color: #353535;
+
+    &:hover {
+      text-decoration: none;
+      background-color: #fff;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 1.4rem;
+      width: 9rem;
+    }
+  }
+}

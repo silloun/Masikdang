@@ -1,0 +1,21 @@
+.Liked {
+    display: inline-block;
+    width: 100%;
+
+    // 특정 폰트에서 특수문자가 안 표시되는 경우가 있음
+    font-family: none;
+
+    .liked {
+        z-index: 100;
+        width: 100%;
+        // color: #ffaac0;
+        display: inline-block;
+    }
+
+    // 드래그 안되게 막는 코드
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}

@@ -1,0 +1,112 @@
+.Review {
+    border: 1px solid rgb(185, 185, 185);
+    border-radius: 3px;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    padding-top: 15px;
+
+    .user_info {
+        .user_name {
+            font-size: 24px;
+            font-family: "BMHANNAPro";
+            margin-right: 10px;
+        }
+        .profile {
+            display: inline-block;
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-top: -5px;
+            width: 50px;
+            border-radius: 25px;
+            border: 1px solid white;
+        }
+        .tscore{
+            margin-left: 10px;
+            height: 30px;
+            vertical-align: 3px;
+            color: rgb(145, 145, 145);
+        }
+    }
+
+    .score_bundle {
+        margin-top: 10px;
+        margin-bottom: 15px;
+        padding-left: 10px;
+        font-family: "BMHANNAPro";
+        background: rgba(0, 0, 0, 0.05);
+        span {
+            font-family: none;
+            color: rgb(255, 180, 0);
+        }
+    }
+
+    .review_img_bundle {
+        margin-top: 15px;
+        .review_img:nth-child(odd) {
+            margin-right: 10px;
+        }
+        .review_img {
+            cursor: pointer;
+            display: inline-block;
+            width: calc(50% - 5px);
+
+            .thumbnail {
+                position: relative;
+                padding-top: 100%;
+                overflow: hidden;
+
+                .centered {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+
+                    .store_img {
+                        position: absolute;
+                        top: 0px;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .date,
+    .edit_button {
+        display: inline-block;
+    }
+    .edit_button:hover {
+        color: #f9bbc7;
+        cursor: pointer;
+    }
+
+    .date {
+        float: right;
+        margin-right: 5px;
+        font-size: 15px;
+        color: rgb(110, 110, 110);
+        height: 20px;
+        padding-top: 2px;
+        margin-top: 5px;
+    }
+
+    .nbsp{
+        display: inline-block;
+    }
+
+    @media screen and (min-width: 500px) {
+        .review_img_bundle {
+            .review_img {
+                width: 100px;
+                margin-right: 10px;
+            }
+        }
+    }
+}

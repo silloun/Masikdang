@@ -1,0 +1,338 @@
+// whatToEat css
+.WhatToEatComponent {
+  min-height: 100vh;
+  color: black;
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+
+  * {
+    font-family: "BMHANNAPro";
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-left: 30%;
+    padding-right: 30%;
+  }
+
+  .top {
+    margin-bottom: 0.5rem;
+    color: black;
+    font-size: 2.2rem;
+    text-align: center;
+    padding: 1rem 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .content {
+    min-height: 70vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .question {
+      padding: 1rem 0 1rem 0;
+      font-size: 2rem;
+      width: 95%;
+
+      word-wrap: break-word;
+      white-space: pre-line;
+
+      @media screen and (min-width: 768px) {
+        font-size: 2.5rem;
+        margin: 5px 0 5px 0;
+      }
+    }
+
+    .answer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      word-wrap: break-word;
+      white-space: pre-line;
+      width: 100%;
+    }
+  }
+
+  .bottom {
+    color: black;
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    height: 100%;
+
+    .backBtn {
+      background: none;
+      border: none;
+      padding-right: 10px;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 1.2rem;
+    }
+  }
+
+  .back {
+    color: black;
+    background: none;
+    border: none;
+    // cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    transition: 0.3s;
+    padding: 5px 10px 5px 10px;
+
+    &:hover {
+      background: #ffffff;
+      box-shadow: 1px 1px 1px 1px #f9bbc7 inset;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 1.5rem;
+    }
+  }
+
+  .locInput {
+    text-align: center;
+    width: 75%;
+  }
+
+  .currLocBtn {
+    background: none;
+    border: none;
+  }
+
+  .loc {
+    color: black;
+  }
+
+  .locBtn {
+    color: #353535;
+    background: #eaeaea;
+    border-radius: 5px;
+    // border: none;
+    padding: 1px 10px 1px 10px;
+  }
+
+  .option {
+    background: #f9bbc7;
+    border: none;
+    border-radius: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+    margin: 3px;
+    width: 95%;
+    height: 4.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    border: 2px solid #f9bbc7;
+
+    @media screen and (min-width: 768px) {
+      font-size: 1.5rem;
+      &:hover {
+        background: #ffffff;
+        color: #f9bbc7;
+      }
+    }
+
+    .optionLink {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 15px;
+      color: black;
+      text-decoration: none;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+// 결과 페이지
+.WhatToEatResultComponent {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 30px;
+
+  * {
+    font-family: "BMHANNAPro";
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-left: 30%;
+    padding-right: 30%;
+  }
+
+  .top {
+    color: #faa8b9;
+    font-size: 2.2rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 3rem;
+    }
+  }
+
+  .memberBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    width: 90%;
+
+    @media screen and (min-width: 768px) {
+      width: 100%;
+    }
+
+    .memberBtn {
+      padding: 1rem;
+      margin: 3px;
+      cursor: pointer;
+      color: black;
+      background: #98d7db;
+      border: none;
+      border-radius: 4px;
+      transition: 0.3s;
+      width: 50%;
+      text-decoration: none;
+      height: 3rem;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.3rem;
+
+      &:hover {
+        border: 2px solid #98d7db;
+        background: white;
+      }
+
+      @media screen and (min-width: 768px) {
+        font-size: 1.6rem;
+        height: 3.3rem;
+      }
+    }
+  }
+
+  .retryBtn {
+    padding: 2px 10px 2px 10px;
+    margin: 8px 0 8px 0;
+    cursor: pointer;
+    color: grey;
+    border: 1.5px solid grey;
+    border-radius: 10px;
+    transition: 0.3s;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+
+    &:hover {
+      background-color: #eaeaea;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 1.7rem;
+      border: 2px solid grey;
+      padding: 2px 12px 2px 12px;
+    }
+  }
+
+  .mentionBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .mentionTop {
+      font-size: 1.5rem;
+      padding-top: 5px;
+      margin: 10px 0 5px 0;
+
+      @media screen and (min-width: 768px) {
+        font-size: 2.2rem;
+        margin: 10px 0 8px 0;
+      }
+    }
+
+    .mentionBottom {
+      font-size: 1.5rem;
+      margin-top: 5px;
+
+      @media screen and (min-width: 768px) {
+        font-size: 2.2rem;
+        margin-top: 8px;
+      }
+    }
+
+    .select {
+      font-size: 1.5rem;
+      background-color: #faa8b967;
+      width: 90%;
+      border-radius: 5px;
+      padding: 10px 20px 10px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      @media screen and (min-width: 768px) {
+        width: 100%;
+        font-size: 2.3rem;
+      }
+
+      .menu {
+        color: black;
+        padding: 3px 0 3px 0;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover {
+          color: #5d5d5d;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .mention {
+      font-size: 1.2rem;
+      margin-top: 5px;
+      color: #4c4c4c;
+
+      @media screen and (min-width: 768px) {
+        font-size: 2rem;
+      }
+
+      .home {
+        color: #4c4c4c;
+        transition: 0.3s;
+
+        &:hover {
+          color: #faa8b9;
+        }
+      }
+    }
+  }
+}

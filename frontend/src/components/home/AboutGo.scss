@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+.AboutGo {
+    width: 100%;
+    height: 80px;
+    background: #f9bbc77e;
+    text-align: center;
+    cursor: pointer;
+    padding-bottom: 5px;
+
+    p:nth-child(1) {
+        color: #fff;
+        padding-top: 20px;
+        font-size: 30px;
+        font-family: "Monoton", cursive;
+        -webkit-animation: none;
+        -moz-animation: none;
+        animation: none;
+    }
+    p:nth-child(1):hover {
+        -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+        -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+        animation: neon1 1.5s ease-in-out infinite alternate;
+    }
+
+    @-webkit-keyframes neon1 {
+        from {
+            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff1177, 0 0 35px #ff1177,
+                0 0 40px #ff1177, 0 0 50px #ff1177, 0 0 75px #ff1177;
+        }
+        to {
+            text-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #fff, 0 0 10px #ff1177, 0 0 17.5px #ff1177,
+                0 0 20px #ff1177, 0 0 25px #ff1177, 0 0 37.5px #ff1177;
+        }
+    }
+
+    @-moz-keyframes neon1 {
+        from {
+            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff1177, 0 0 35px #ff1177,
+                0 0 40px #ff1177, 0 0 50px #ff1177, 0 0 75px #ff1177;
+        }
+        to {
+            text-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #fff, 0 0 10px #ff1177, 0 0 17.5px #ff1177,
+                0 0 20px #ff1177, 0 0 25px #ff1177, 0 0 37.5px #ff1177;
+        }
+    }
+    @keyframes neon1 {
+        from {
+            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff1177, 0 0 35px #ff1177,
+                0 0 40px #ff1177, 0 0 50px #ff1177, 0 0 75px #ff1177;
+        }
+        to {
+            text-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #fff, 0 0 10px #ff1177, 0 0 17.5px #ff1177,
+                0 0 20px #ff1177, 0 0 25px #ff1177, 0 0 37.5px #ff1177;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        p:nth-child(1) {
+            padding-top: 27px;
+            font-size: 35px;
+        }
+        height: 100px;
+        margin-top: 5px;
+    }
+}

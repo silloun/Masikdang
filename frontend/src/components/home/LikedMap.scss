@@ -1,0 +1,78 @@
+.LikedMap {
+    .thumbnail {
+        position: relative;
+        padding-top: 56.25%;
+        border-radius: 10px 10px 0 0;
+        overflow: hidden;
+        display: block;
+
+        .centered {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+
+            .kakaoMap {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    .login,
+    .more,
+    .no_store {
+        padding: 5px;
+    }
+
+    .cursor{
+        cursor: pointer;
+    }
+    .backgroud{
+        background: rgba(175, 175, 175, 0.1);
+        border-radius: 0 0 10px 10px;
+    }
+
+    .now_pos {
+        margin: 5px;
+        display: inline-block;
+        padding: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background: #f9bbc781;
+        font-family: "BMHANNAPro";
+        font-size: 18px;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &:hover {
+            color: white;
+        }
+    }
+
+    .more {
+        cursor: pointer;
+        padding-top: 0px;
+
+        &:hover {
+            color: #f9bbc7;
+        }
+    }
+
+    .CarouselSlider {
+        padding: 5px;
+        padding-bottom: 0px;
+    }
+
+    @media screen and (min-width: 768px) {
+        .thumbnail {
+            padding-top: 35%;
+        }
+    }
+}

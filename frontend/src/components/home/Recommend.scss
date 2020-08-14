@@ -1,0 +1,108 @@
+.Recommend {
+  margin-bottom: 15px;
+  .Loadings {
+    height: 48px;
+  }
+
+  .CarouselSlider {
+    padding-bottom: 0px;
+    background: rgba(175, 175, 175, 0.1);
+
+    .explain {
+      &:hover {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .title {
+        font-size: 1.1rem;
+        font-weight: normal;
+        margin: 0;
+        padding: 0 5px;
+        // 길어지면 ...으로 생략하기
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        @media screen and (min-width: 768px) {
+          font-size: 1.5rem;
+        }
+      }
+
+      .area {
+        width: 90%;
+        // 길어지면 ...으로 생략하기
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  .needLogin {
+    background: rgba(175, 175, 175, 0.1);
+    height: 100px;
+    // border: 1px solid black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+      height: 150px;
+    }
+
+    .mention {
+      @media screen and (min-width: 768px) {
+        font-size: 1.2rem;
+      }
+    }
+
+    .memberBox {
+      font-weight: bold;
+
+      .joinBtn {
+        font-size: 1rem;
+        margin: 10px;
+        padding: 7px 10px;
+        border: 2px solid #98d7db;
+        background: #98d7db;
+        transition: 0.5s;
+        border-radius: 7px;
+        color: #353535;
+
+        &:hover {
+          text-decoration: none;
+          background: #98d7db65;
+        }
+
+        @media screen and (min-width: 768px) {
+          font-size: 1.2rem;
+        }
+      }
+
+      .loginBtn {
+        font-size: 1rem;
+        border: 2px solid #f9bbc7;
+        border-radius: 7px;
+        margin: 10px;
+        padding: 7px 16px;
+        background: #f9bbc7;
+        transition: 0.5s;
+        color: #353535;
+
+        &:hover {
+          text-decoration: none;
+          background: #f9bbc765;
+        }
+
+        @media screen and (min-width: 768px) {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}

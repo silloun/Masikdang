@@ -1,0 +1,75 @@
+.Login,
+.Signup,
+.SignupDetail {
+    font-family: "BMHANNAPro";
+    display: inline-block;
+    text-align: center;
+
+    .main_letter {
+        font-size: 30px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    // 간편 로그인 버튼
+    .easy_login {
+        font-family: "NanumSquareRound";
+        outline: none;
+        border: 1px solid transparent;
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 1px 0px, rgba(0, 0, 0, 0.24) 0px 0px 1px 0px;
+        width: 60%;
+        height: 50px;
+        background-color: #ffd43b;
+        border-radius: 2px;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: bolder;
+        margin-bottom: 3vh;
+
+        span {
+            font-family: "NanumSquareRound";
+            font-size: 20px;
+            color: white;
+            background: #005082;
+            width: 100%;
+            height: 51px;
+            border-radius: 3px;
+
+            /* flex로 내부 내용 중앙 정렬*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .easy_login:hover {
+        background-color: #ffd53bbb;
+    }
+
+    .link_btn {
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+        a:hover {
+            color: #ffa7a6;
+        }
+        font-size: 18px;
+        margin-top: 2vh;
+        margin-bottom: 3vh;
+    }
+
+    @media screen and (min-width: 768px) {
+        .main_letter {
+            font-size: 36px;
+            margin-top: 40px;
+            margin-bottom: 50px;
+        }
+
+        .easy_login {
+            width: 250px;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+    }
+}

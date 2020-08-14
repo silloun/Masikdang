@@ -1,0 +1,69 @@
+.Intro {
+    width: 100%;
+    height: 100px;
+    background: #98d7db91;
+    text-align: center;
+    cursor: pointer;
+    padding-bottom: 5px;
+    font-family: "BMHANNAPro";
+    font-size: 20px;
+    padding-top: 12px;
+    margin-top: 5px;
+
+    p:nth-child(1) {
+        color: #fff;
+        padding-top: 20px;
+        font-size: 28px;
+        display: inline;
+        -webkit-animation: none;
+        -moz-animation: none;
+        animation: none;
+    }
+    p:nth-child(1):hover {
+        -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+        -moz-animation: neon2 1.5s ease-in-out infinite alternate;
+        animation: neon2 1.5s ease-in-out infinite alternate;
+    }
+
+    @-webkit-keyframes neon2 {
+        from {
+            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff, 0 0 35px #228dff,
+                0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff;
+        }
+        to {
+            text-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #fff, 0 0 10px #228dff, 0 0 17.5px #228dff,
+                0 0 20px #228dff, 0 0 25px #228dff, 0 0 37.5px #228dff;
+        }
+    }
+
+    @-moz-keyframes neon2 {
+        from {
+            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff, 0 0 35px #228dff,
+                0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff;
+        }
+        to {
+            text-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #fff, 0 0 10px #228dff, 0 0 17.5px #228dff,
+                0 0 20px #228dff, 0 0 25px #228dff, 0 0 37.5px #228dff;
+        }
+    }
+    @keyframes neon2 {
+        from {
+            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff, 0 0 35px #228dff,
+                0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff;
+        }
+        to {
+            text-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #fff, 0 0 10px #228dff, 0 0 17.5px #228dff,
+                0 0 20px #228dff, 0 0 25px #228dff, 0 0 37.5px #228dff;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        height: 122px;
+        font-size: 22px;
+        padding-top: 18px;
+        margin-top: 0px;
+        p:nth-child(1) {
+            font-size: 35px;
+        }
+    }
+}

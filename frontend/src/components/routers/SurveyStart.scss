@@ -1,0 +1,73 @@
+.SurveyStartComponent {
+  font-family: "BMHANNAPro";
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  // border: 1px solid black;
+
+  .btn {
+    font-size: 1.4rem;
+    background: #98d7db;
+    border: 2px solid #98d7db;
+    border-radius: 4px;
+    transition: 0.4s;
+    margin: 4rem 0 4rem 0;
+    box-shadow: 0px 0px 10px #98d7db;
+
+    &:hover {
+      background: white;
+      box-shadow: inset 0px 0px 10px #98d7db, 0px 0px 10px #98d7db;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 2rem;
+    }
+  }
+
+  .explain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 30px 10px 30px;
+    border-radius: 8px;
+
+    font-size: 1.2rem;
+    color: grey;
+    background: #f6f6f6;
+
+    @media screen and (min-width: 768px) {
+      font-size: 1.6rem;
+    }
+  }
+
+  .first {
+    margin-bottom: 2rem;
+    font-size: 2.1rem;
+    color: #4cbfc7;
+
+    @media screen and (min-width: 768px) {
+      font-size: 3rem;
+    }
+  }
+
+  .second {
+    font-size: 1.7rem;
+
+    @media screen and (min-width: 768px) {
+      font-size: 2.2rem;
+    }
+  }
+
+  .third {
+    margin-top: 0.5rem;
+    font-size: 1.3rem;
+    color: #4c4c4c;
+
+    @media screen and (min-width: 768px) {
+      font-size: 1.7rem;
+    }
+  }
+}

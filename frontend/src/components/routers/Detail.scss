@@ -1,0 +1,192 @@
+.Detail {
+    font-family: "NanumSquareRound";
+    font-size: 18px;
+
+    .container-fluid {
+        padding: 5px;
+
+        .row {
+            margin: 0px;
+            padding: 0px;
+
+            .col-12,
+            .col-md-8,
+            .col-md-4,
+            .col-lg-8,
+            .col-lg-4 {
+                padding: 0px;
+            }
+        }
+
+        .store_info {
+            padding: 10px;
+            width: calc(100%);
+
+            .store_name {
+                font-size: 35px;
+                font-weight: bolder;
+                font-family: "S-CoreDream-8Heavy";
+                margin-bottom: 20px;
+            }
+
+            .tags,
+            .tel,
+            .store_score {
+                margin-bottom: 6%;
+            }
+
+            .menu_list,
+            .time {
+                margin-top: 10%;
+                margin-bottom: 10%;
+                .menu {
+                    margin-bottom: 2px;
+                }
+            }
+            .store_score {
+                .score_text {
+                    display: inline-block;
+                    font-family: "BMHANNAPro";
+                    font-size: 30px;
+                    margin-right: 10px;
+                }
+            }
+
+            .button {
+                font-family: "BMHANNAPro";
+                display: inline-block;
+                width: calc(50% - 5px);
+                border: 2px solid black;
+                border-radius: 25px;
+                height: 50px;
+                text-align: center;
+                margin-bottom: 15px;
+                font-size: 18px;
+                cursor: pointer;
+            }
+
+            .liked_item {
+                padding: 8px;
+            }
+
+            .evaluation {
+                padding: 10px;
+                margin-left: 10px;
+            }
+            .evaluation:hover {
+                color: #f9bbc7;
+            }
+        }
+
+        .review_no_info {
+            font-size: 20px;
+            span {
+                font-size: 36px;
+                font-family: "BMHANNAPro";
+                margin-right: 3px;
+            }
+        }
+
+        //   #f9bbc7;
+        //   #98d7db;
+
+        // 리뷰 모음
+        .store_review_bundle {
+            margin-bottom: 20px;
+            .read_more {
+                width: 100%;
+                text-align: center;
+                height: 41px;
+                padding-top: 7px;
+                background: #98d7db6e;
+                border-radius: 3px;
+                border: solid rgb(185, 185, 185);
+                border-width: 0 1px 1px 1px;
+
+                cursor: pointer;
+            }
+            .read_more:hover {
+                color: white;
+            }
+        }
+        .address {
+            padding: 5px;
+            background: #f9bbc780;
+            color: black;
+        }
+
+        .store_similar {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            .similar_text {
+                font-size: 22px;
+                font-family: "BMHANNAPro";
+                margin-bottom: 15px;
+            }
+        }
+        // 모바일에서 너무 붙어있어서 잘보이게 띄우기
+        .store_map,
+        .store_similar,
+        .store_review_bundle {
+            width: calc(100% - 20px);
+            margin-left: 10px;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .container-fluid {
+            // .store_info {
+            //     margin-top: 10px;
+            //     padding-left: 10%;
+
+            //     .button {
+            //         width: calc(90%);
+            //     }
+
+            //     .evaluation {
+            //         margin-left: 0px;
+            //     }
+            // }
+
+            .store_map,
+            .store_similar,
+            .store_review_bundle {
+                width: calc(100%);
+                padding: 10px;
+                margin-left: 0px;
+            }
+
+            .store_review_bundle {
+                padding: 0;
+            }
+
+            .store_map,
+            .store_similar {
+                padding: 0px;
+            }
+
+            .store_similar {
+                .similar_text {
+                    font-size: 24px;
+                }
+            }
+        }
+
+    }
+    @media screen and (min-width: 992px) {
+        .container-fluid {
+            .store_info {
+                margin-top: 10px;
+                padding-left: 10%;
+
+                .button {
+                    width: calc(90%);
+                }
+
+                .evaluation {
+                    margin-left: 0px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,115 @@
+.SignupDetail {
+    font-family: "BMHANNAPro";
+
+    * {
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+    }
+
+    .logo-area {
+        display: none;
+    }
+
+    .main_letter {
+        font-size: 30px;
+    }
+
+    .input_nickname {
+        width: 100%;
+        height: 40px;
+        border-radius: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border: 2px solid #3e2723;
+    }
+
+    .input_nickname_duplicate {
+        width: 100%;
+        height: 40px;
+        border-radius: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border: 2px solid #e65100;
+    }
+
+    .nickname_check {
+        margin-top: 10px;
+        font-size: 15px;
+        font-family: "NanumSquareRound";
+        color: #e65100;
+        font-weight: bold;
+    }
+
+    .div_age {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-family: "S-CoreDream-8Heavy";
+    }
+
+    .MuiSlider-root {
+        color: #4e342e;
+    }
+
+    .MuiFormControlLabel-root {
+        span {
+            font-family: "S-CoreDream-8Heavy";
+        }
+    }
+
+    .bnt_bundle {
+        .link_btn {
+            display: inline-block;
+            border-radius: 3px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background: #f9bbc7;
+            margin-top: 30px;
+            width: calc(50% - 5px);
+            cursor: pointer;
+            color: white;
+        }
+        .link_btn:hover{
+            background: #f9bbc79c;
+        }
+        .link_gab {
+            display: inline-block;
+            width: 10px;
+        } 
+    }
+
+    .confirm {
+        height: 200px;
+        left: auto;
+        top: auto;
+    }
+
+    @media screen and (min-width: 768px) {
+        .main_letter {
+            font-size: 36px;
+        }
+        .input_nickname,
+        .input_nickname_duplicate {
+            width: 80%;
+        }
+        .div_age {
+            margin-top: 50px;
+        }
+        .age_slider {
+            width: 80%;
+            margin-left: 10%;
+            margin-bottom: 30px;
+        }
+        .main_letter {
+            margin-top: 55px;
+            margin-bottom: 60px;
+        }
+        .bnt_bundle {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            .link_btn {
+                width: calc(40% - 5px);
+            }
+        }
+    }
+}

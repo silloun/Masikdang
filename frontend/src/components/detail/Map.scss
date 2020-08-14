@@ -1,0 +1,34 @@
+.Map {
+    padding: 0px;
+    .thumbnailm {
+        position: relative;
+        padding-top: 56.25%;
+        margin-bottom: 10px;
+        overflow: hidden;
+        display: block;
+
+        .centeredm {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+
+            .kakaoMapm {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .thumbnailm {
+            padding-top: 40%;
+        }
+    }
+}

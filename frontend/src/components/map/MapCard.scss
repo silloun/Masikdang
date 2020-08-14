@@ -1,0 +1,49 @@
+.MapCard {
+    border-radius: 1px;
+    padding: 10px;
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 100%;
+    font-family: "NanumSquareRound";
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+
+    .img {
+        width: 100px;
+        height: 100px;
+        border: 1px solid rgb(160, 160, 160);
+        margin-right: 10px;
+        object-fit: fill;
+    }
+
+    .store_info {
+        display: inline-block;
+        width: calc(100% - 110px);
+
+        .store_name{
+            font-family: "BMHANNAPro";
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .store_info {
+            padding-left: 10px;
+    
+            .store_name{
+                font-family: "BMHANNAPro";
+                font-size: 20px;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    &:hover{
+        .store_name{
+            color: #98d7db;
+        }
+    }
+}

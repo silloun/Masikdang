@@ -1,0 +1,105 @@
+.HeaderSearch {
+  cursor: pointer;
+
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  font-family: "NanumSquareRound";
+
+  .input {
+    border-bottom: 1px solid rgb(187, 187, 187);
+    border-top: 1px solid rgb(187, 187, 187);
+    font-size: 15px;
+    text-align: left;
+  }
+
+  .col-10 {
+    padding: 0;
+
+    * {
+      height: calc(100% - 2px);
+      margin-top: 1px;
+      padding-left: 10px;
+      text-align: left;
+      border: none;
+      outline: none;
+      display: inline-block;
+    }
+  }
+
+  .input_subject {
+    width: 100px;
+  }
+
+  // select 모양 바꾸기
+  select {
+    cursor: pointer;
+    background: url(../../img/select.png) no-repeat center center;
+    background-size: 100px;
+    border: 1px white;
+    border-radius: 0px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+  }
+
+  .search_input {
+    padding-right: 10px;
+    width: calc(100% - 100px);
+  }
+
+  // 검색, 설문 버튼
+  .btn {
+    padding: 0;
+    padding-top: 2%;
+    font-size: 4vw;
+  }
+
+  .search_btn {
+    background: #f9bbc7;
+    border: 1px solid #f9bbc7;
+    border-radius: 0 3px 3px 0;
+    transition: 0.4s;
+
+    &:hover {
+      background: #f9bbc798;
+      border: 1px solid #f9bbc798;
+    }
+  }
+
+  .test2 {
+    padding-bottom: 2%;
+    background: #98d7db;
+    border: 1px solid #98d7db;
+    border-radius: 3px 0 0 3px;
+    transition: 0.4s;
+    cursor: default;
+  }
+
+  @media screen and (min-width: 692px) {
+    .input {
+      font-size: 20px;
+    }
+
+    .input_subject {
+      width: 120px;
+    }
+
+    .search_input {
+      width: calc(100% - 120px);
+    }
+
+    .search_btn {
+      padding-top: 7px;
+      padding-bottom: 7px;
+      font-size: 20px;
+    }
+
+    .test2 {
+      padding-top: 6px;
+      padding-bottom: 7px;
+      font-size: 22px;
+    }
+  }
+}

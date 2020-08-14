@@ -1,0 +1,37 @@
+.Search {
+    span,
+    .store_len {
+        font-family: "NanumSquareRound";
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .store_len {
+        padding: 5px;
+        margin-left: 5px;
+        .store_num{
+            font-family: "BMHANNAPro";
+            font-size: 20px;
+        }
+    }
+    .card_item {
+        display: inline-block;
+        width: 50%;
+        padding: 5px;
+    }
+
+    @media screen and (min-width: 768px) {
+        .card_item {
+            width: 25%;
+        }
+        .store_len {
+            font-size: 15px;
+            .store_num{
+                font-size: 20px;
+            }
+        }
+    }
+}

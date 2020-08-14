@@ -1,0 +1,75 @@
+.Header {
+  // left: 15px;
+  cursor: pointer;
+  width: 100%;
+  font-family: "NanumSquareRound";
+  text-align: center;
+
+  .col-3 {
+    padding: 0;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #5d5d5d;
+    transition: 0.3s;
+
+    .survey2_btn {
+      font-family: "S-CoreDream-8Heavy";
+      float: left;
+      margin-top: 17px;
+      font-size: 12px;
+      width: 60px;
+      border: 1.5px solid #98d7db;
+      border-radius: 7px;
+      padding-top: 4px;
+      padding-bottom: 5px;
+      &:hover {
+        color: #98d7db;
+      }
+    }
+    .survey1_btn {
+      font-family: "S-CoreDream-8Heavy";
+      float: right;
+      margin-top: 17px;
+      font-size: 12px;
+      width: 60px;
+      border: 1.5px solid #f9bbc7;
+      border-radius: 7px;
+      padding-top: 4px;
+      padding-bottom: 5px;
+      &:hover {
+        color: #f9bbc7;
+      }
+    }
+  }
+
+  .logo {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    img {
+      height: 50px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .survey1_btn {
+      font-size: 15px;
+    }
+
+    .logo {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      img {
+        height: 60px;
+      }
+    }
+    .col-3 {
+      padding: 0;
+      padding-right: 5px;
+      padding-left: 5px;
+    }
+  }
+}

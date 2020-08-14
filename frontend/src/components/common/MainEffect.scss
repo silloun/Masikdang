@@ -1,0 +1,74 @@
+.MainEffect {
+  width: 100%;
+  height: 180px;
+  // background: rgba(255, 255, 255, 0.685);
+  border-radius: 3px;
+  font-family: "BMHANNAPro";
+
+  .text {
+    // font-family: "Cafe24Ohsquare";
+    padding-top: 10px;
+    font-size: 25px;
+    height: 60px;
+    color: rgba(255, 255, 255, 0.9);
+    // font border
+    // text-shadow: -1px 0 rgb(0, 0, 0), 0 1px rgb(0, 0, 0), 1px 0 rgb(0, 0, 0), 0 -1px rgb(0, 0, 0);
+    // -moz-text-shadow: -1px 0 rgb(0, 0, 0), 0 1px rgb(0, 0, 0), 1px 0 rgb(0, 0, 0), 0 -1px rgb(0, 0, 0);
+    // -webkit-text-shadow: -1px 0 rgb(0, 0, 0), 0 1px rgb(0, 0, 0), 1px 0 rgb(0, 0, 0), 0 -1px rgb(0, 0, 0);
+  }
+
+  .animated-text {
+    background: #fff;
+    color: #7ed5db;
+    height: 60px;
+    overflow: hidden;
+  }
+
+  .line {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 35px;
+    line-height: 60px;
+  }
+
+  .line:first-child {
+    animation: anim 12s infinite;
+  }
+
+  @keyframes anim {
+    0% {
+      margin-top: 0;
+    }
+    16% {
+      margin-top: -60px;
+    }
+    33% {
+      margin-top: -120px;
+    }
+    50% {
+      margin-top: -180px;
+    }
+    66% {
+      margin-top: -120px;
+    }
+    82% {
+      margin-top: -60px;
+    }
+    100% {
+      margin-top: 0;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 500px;
+    background: rgba(255, 255, 255, 0.685);
+    .text {
+      // font-family: "Cafe24Ohsquare";
+      color: rgba(0, 0, 0, 0.8);
+      // font border
+      // text-shadow: -1px 0 rgb(0, 0, 0), 0 1px rgb(0, 0, 0), 1px 0 rgb(0, 0, 0), 0 -1px rgb(0, 0, 0);
+      // -moz-text-shadow: -1px 0 rgb(0, 0, 0), 0 1px rgb(0, 0, 0), 1px 0 rgb(0, 0, 0), 0 -1px rgb(0, 0, 0);
+      // -webkit-text-shadow: -1px 0 rgb(0, 0, 0), 0 1px rgb(0, 0, 0), 1px 0 rgb(0, 0, 0), 0 -1px rgb(0, 0, 0);
+    }
+  }
+}
